@@ -1,0 +1,23 @@
+{
+  "name": "08server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronMcGloin1506/Udemy_11WebServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronMcGloin1506/Udemy_11WebServer/issues"
+  },
+  "homepage": "https://github.com/AaronMcGloin1506/Udemy_11WebServer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
