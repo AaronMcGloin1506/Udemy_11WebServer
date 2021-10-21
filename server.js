@@ -10,14 +10,22 @@ const cars = {
 
 
 const server = http.createServer((req,res)=>{
-    // res.writeHead(200,{'Content-type':'text/html'})
-    // res.end(HTML)
-    res.writeHead(200, {'Content-type':'application/json'})
-    const json =JSON.stringify ({
-        names,
-        cars
-    })
-    res.end(json)
+
+    if(req.url === '/'){
+        res.writeHead(200,{'Content-type':'text/html'})
+        res.end(HTML)
+    } else if(req.url === '/api/user') {
+        res.writeHead(200, {'Content-type':'application/json'})
+        const json = JSON.stringify ({
+            name:'Francis',
+            lastname:'Jones'
+        })
+        res.end(json)
+    } else {
+        res.writeHead(404)
+        res.end();
+    }
+
 });
 
 const port = 8282;
